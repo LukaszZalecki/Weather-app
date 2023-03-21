@@ -6,9 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Weather app</title>
 </head>
 <body>
+
+    <div id="main-div">
+        <div id="search-div">
+            <input type="text" id="search-input" placeholder="Search" onfocus="placeholder=''" onblur="placeholder='Search'">
+            <button id="search-button"><i class="fa fa-search"></i></button>
+        </div>
+        <div id="current-city-div">
+            <label>Curennt city:</label>
+            <span id="city-span">Warsaw</span>
+        </div>
+        <div id="temp-div">
+            <span id="temp-span">36</span>
+            <label>&#x2103</label>
+        </div>
+        <div id="current-cloudiness">
+            <label>Current cloudiness: </label>
+            <span id="cloudiness-span">32%</span>
+        </div>
+        <div class="another-div"></div>
+        <div class="another-div"></div>
+        <div class="another-div"></div>
+        <div id="sun">
+            <div class="in-sun-div"></div>
+            <div class="in-sun-div"></div>
+        </div>
+    </div>
     
 </body>
 </html>
